@@ -265,7 +265,7 @@ on region.code_region=ville.code_region
 
 
 7_
-)SELECT syndic.nom_syndic, region.nom_region
+SELECT syndic.nom_syndic, region.nom_region
 FROM `syndic`
 INNER JOIN `contrat`
 on contrat.code_syndic=syndic.code_syndic
@@ -281,7 +281,7 @@ HAVING MAX(contrat.numcontrat)
 
 
 8_
-)SELECT quartier.*
+SELECT quartier.*
 FROM `quartier`
 inner join `bien_immobilier`
 on bien_immobilier.code_quartier=quartier.code_quartier
